@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp">
+
+    <TextView
+        android:id="@+id/tvNoSurah"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:text="1"
+        android:textColor="#2FAE9E"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/tvNamaSurah"
+        android:textSize="20sp"
+        android:text="Al-Fatihah"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvNoSurah"/>
+
+    <TextView
+        android:id="@+id/tvJumlahAyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNamaSurah"
+        android:layout_toEndOf="@+id/tvNoSurah"
+        android:layout_margin="5dp"
+        android:textSize="17sp"
+        android:text="7 Ayat"
+        android:textColor="#B5A898"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9AAA9C8B"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvJumlahAyat"/>
+
+    <ImageView
+        android:id="@+id/btnSound"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_volume_up_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
